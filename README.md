@@ -54,19 +54,129 @@ The following key columns are used extensively in the analysis and dashboard vis
 
 ---
 
-## 🧹 Data Loading & Cleaning
+Below is the **clean, GitHub-ready Markdown version** of your **Methodology section (up to Data Modeling)**.
+You can directly copy-paste this into your **README.md**.
 
-Data was imported using **Get Data** from the Data tab in Excel.
-All six tables were loaded and transformed using **Power Query**.
+---
 
-Cleaning steps included:
+## 📌 Methodology
 
-- Removing unnecessary rows and columns
-- Formatting date columns
-- Setting appropriate data types
-- Ensuring relationship consistency
+### 📥 Data Loading & Integration
 
-Refer to the tutorial for detailed transformation steps.
+Data was imported into Excel using **Power Query (Get Data)**.
+All tables were loaded using the **Create Connection Only** option and added to the **Excel Data Model** to enable efficient data modeling and analysis.
+
+**Tables Used:**
+
+* `FactInternetSales` (Fact Table)
+* `DimProduct`
+* `DimSalesTerritory`
+* `DimDate`
+* `DimCustomer`
+* `DimGeography`
+
+Power Query was used as the primary ETL tool for data transformation, cleaning, and preparation.
+
+---
+
+### 🧹 Data Cleaning & Preparation
+
+Data cleaning and preparation were performed **table by table** to ensure consistency, accuracy, and analytical readiness.
+
+
+
+#### 🔹 FactInternetSales
+
+* Retained only relevant columns required for analysis, including product, customer, date, territory keys, quantity, pricing, and cost fields
+* Renamed `ProductStandardCost` to **Cost**
+* Corrected data types across all columns
+* Created calculated columns:
+
+  * **Total Revenue** = `OrderQuantity × UnitPrice`
+  * **COGS (Cost of Goods Sold)** = `OrderQuantity × Cost`
+  * **Total Profit** = `Total Revenue − COGS`
+* Formatted all financial fields as **Currency**
+* Created **Product Price Type**:
+
+  * *Less Expensive* (≤ 150)
+  * *Expensive* (> 150)
+
+
+
+#### 🔹 DimSalesTerritory
+
+* Removed non-analytical column (`SalesTerritoryImage`)
+* Filtered out records containing null values
+
+
+
+#### 🔹 DimProduct
+
+* Selected relevant columns such as Product Key, Product Name, and Color
+* Renamed `EnglishProductName` to **Product Name**
+* Replaced `"NA"` values in the Color column with **“Unspecified”**
+
+
+
+#### 🔹 DimGeography
+
+* Selected Geography, City, Country, and Sales Territory attributes
+* Renamed `EnglishCountryRegionName` to **Country**
+
+
+
+#### 🔹 DimCustomer
+
+* Created **Full Name** by merging First Name and Last Name
+* Selected key customer attributes including demographic and geographic information
+* Calculated **Customer Age** using Birth Date and the current date
+* Converted age values to integer format
+* Created **Age Group** categories:
+
+  * 25–30
+  * 31–35
+  * 36–40
+  * 41–45
+  * 46–50
+  * 50+
+
+
+
+#### 🔹 DimDate
+
+* Retained the primary date field and renamed it to **Date**
+* Created derived date attributes:
+
+  * **Year** (filtered to 2009–2010)
+  * **Month Number**
+  * **Month Name** (abbreviated)
+  * **Day Name** (abbreviated)
+  * **Day of Week Number**
+* Classified dates into **Weekday** and **Weekend**
+
+---
+
+### 🗄️ Data Modeling
+
+A **star schema** was implemented with `FactInternetSales` as the central fact table connected to all dimension tables.
+
+**Model Characteristics:**
+
+* Many-to-one (*:1) relationships
+* All relationships set as **active**
+* Single-directional filtering from dimension tables to the fact table
+* Optimized for accurate aggregations and dashboard performance
+
+**Key Relationships:**
+
+* `DimCustomer → DimGeography`
+* `FactInternetSales → DimCustomer`
+* `FactInternetSales → DimDate`
+* `FactInternetSales → DimProduct`
+* `FactInternetSales → DimSalesTerritory`
+
+
+---
 
 ## 📈 Data Analysis
 
