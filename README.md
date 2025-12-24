@@ -4,7 +4,7 @@
 ## 📘 Introduction
 
 This is a sales analysis project built in Excel using the Adventure Works dataset.
-The project is a recreation for learning purposes, inspired by a YouTube tutorial series [link below](https://github.com/Nambhidharan18/Adventure_Works_Sales_Analysis_in_Excel/blob/main/README.md#resources) .
+The project is a recreation for learning purposes, inspired by a YouTube tutorial series [link below](https://github.com/Nambhidharan18/Adventure_Works_Sales_Analysis_in_Excel/blob/main/README.md#-resources) .
 It demonstrates end-to-end sales analysis using Excel, Power Query, and dashboards.
 
 ---
