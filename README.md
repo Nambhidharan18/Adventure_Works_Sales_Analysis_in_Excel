@@ -174,17 +174,121 @@ A **star schema** was implemented with `FactInternetSales` as the central fact t
 
 ---
 
-## 📈 Data Analysis
+### 📈 Data Analysis
 
-The project includes **four analysis worksheets**:
 
-- **Analysis 1**
-- **Analysis 2**
-- **Product Analysis**
-- **Customer Analysis**
+This project presents a structured data analysis performed using **Microsoft Excel**, with **Pivot Tables** as the primary analytical tool.
+The objective of the analysis is to evaluate overall business performance, identify time-based trends, and conduct detailed product and customer-level deep-dive analyses.
 
-**Analysis 1 & 2** → Time-series insights
-**Product & Customer Analysis** → Deep-dive dashboards
+The analysis is organized into **four worksheets**, each addressing a specific analytical objective:
+
+* **Analysis-1 & Analysis-2:** Time-series and performance trend insights
+* **Product Analysis & Customer Analysis:** In-depth dashboards for product and customer behavior
+
+---
+
+#### Sheet Structure Summary
+
+* **number_of_sheets:** 4
+* **sheet_titles:**
+
+  * Analysis-1
+  * Analysis-2
+  * Product Analysis
+  * Customer Analysis
+
+---
+
+#### 1.Analysis-1
+
+##### Analytical Techniques Applied
+
+* Descriptive Analysis
+* Trend Analysis
+* Comparative Analysis
+
+###### Analysis Description
+
+The *Analysis-1* worksheet provides a consolidated view of overall business performance. Pivot tables were used to summarize key performance indicators, including transaction volume, revenue, cost of goods sold (COGS), profit, order quantity, and profit margins.
+
+Year-wise aggregations enabled trend identification and comparative evaluation of performance across different periods. Additional product-level summaries, such as sold and unsold products, were included to assess sales effectiveness and inventory movement.
+
+###### Key Findings
+
+* Business performance exhibited noticeable year-over-year variations in revenue, profit, and transaction volume.
+* Profit margins fluctuated across years, indicating changes in cost structure, pricing strategies, or product mix.
+* A gap between total products and sold products highlighted opportunities for improved inventory utilization.
+* Higher transaction volumes were strongly associated with increased revenue and profit levels.
+
+---
+
+#### 2.Analysis-2
+
+##### Analytical Techniques Applied
+
+* Time-Series Analysis
+* Trend Analysis
+* Contribution Analysis
+
+###### Analysis Description
+
+The *Analysis-2* worksheet focuses on profit behavior across multiple time dimensions. Pivot tables were used to analyze profit trends at the monthly, daily, and quarterly levels.
+
+Additionally, profit contribution was evaluated by categorizing transactions into weekdays and weekends and by calculating each quarter’s percentage contribution to total profit. This approach enabled identification of seasonal patterns and operational performance across time periods.
+
+###### Key Findings
+
+* Monthly profit analysis revealed recurring seasonal trends, with certain months consistently generating higher profit.
+* Daily profit patterns showed variability, suggesting differences in customer activity throughout the week.
+* Weekdays contributed a larger share of total profit compared to weekends, indicating stronger business activity during standard operating days.
+* Profit contribution was uneven across quarters, with specific quarters accounting for a significant portion of annual profitability.
+
+---
+
+#### 3.Product Analysis
+
+##### Analytical Techniques Applied
+
+* Comparative Analysis
+* Contribution Analysis
+* Segmentation Analysis
+
+###### Analysis Description
+
+The *Product Analysis* worksheet delivers a detailed assessment of product-level profitability. Pivot tables were used to compare profit contributions across individual products and identify high-performing items.
+
+Products were further segmented by attributes such as color and price category (expensive vs. less expensive). This segmentation allowed evaluation of how product characteristics and pricing tiers influence overall profitability.
+
+###### Key Findings
+
+* A small subset of products contributed a disproportionately large share of total profit.
+* The top-performing products significantly outperformed the remaining product portfolio in terms of profit contribution.
+* Profitability varied across product colors, indicating differing customer preferences or demand patterns.
+* Expensive products generated higher profit per unit, while less expensive products contributed through higher sales volume.
+
+---
+
+#### 4. Customer Analysis
+
+##### Analytical Techniques Applied
+
+* Descriptive Analysis
+* Comparative Analysis
+* Segmentation Analysis
+* Contribution Analysis
+
+###### Analysis Description
+
+The *Customer Analysis* worksheet focuses on understanding customer profitability and demographic patterns. Pivot tables were used to analyze customer profit contribution alongside demographic attributes such as age, gender, and geographic location.
+
+Customers were grouped into top-performing and other segments to evaluate revenue concentration. Additional segmentation by age group, gender, and country enabled deeper insight into customer behavior and market distribution.
+
+###### Key Findings
+
+* A limited number of top customers accounted for a significant portion of total profit.
+* Profit contribution varied across gender segments, indicating differences in purchasing behavior.
+* Certain age groups consistently generated higher profit, reflecting stronger engagement or purchasing power.
+* Geographic analysis showed that a few countries dominated overall profit contribution, while other regions presented growth opportunities.
 
 ---
 
