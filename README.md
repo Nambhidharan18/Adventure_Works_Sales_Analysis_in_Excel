@@ -54,10 +54,6 @@ The following key columns are used extensively in the analysis and dashboard vis
 
 ---
 
-Below is the **clean, GitHub-ready Markdown version** of your **Methodology section (up to Data Modeling)**.
-You can directly copy-paste this into your **README.md**.
-
----
 
 ## 📌 Methodology
 
