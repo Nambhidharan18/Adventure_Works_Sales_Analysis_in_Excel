@@ -411,19 +411,26 @@ These dashboards provide clear, visual insights into revenue, customers, product
 
 
 ```
-[Project Name]/
-├── data/
-│   ├── raw/
-│   │   └── facebook_campaign_data.csv
-│   │   └── instagram_campaign_data.csv
-│   └── processed/
-│       └── combined_clean_data.csv
-├── analysis/
-│   └── ad_performance_summary.pdf (or .docx)
-├── dashboard/
-│   └── Power_BI_Project_File.pbix
-├── reports/
-│   └── Executive_Summary_Report.pdf
+[Adventure_Works_Sales_Analysis_in_Excel]/
+├── Dashboard
+|   └── Adventure Works Sales Dashboard
+├── Database
+|   └──  AdventureWorks
+├── Images/
+│   └── analytics
+|   └── profit
+|   └── barcode (1)
+|   └── ready-stock (1)
+|   └── barcode
+|   └── ready-stock
+|   └── calendar
+|   └── sale
+|   └── D-profit
+|   └── earning
+|   └── sales
+|   └── growth
+|   └── shopping-cart
+|   └── in-stock
 └── README.md
 ```
 
