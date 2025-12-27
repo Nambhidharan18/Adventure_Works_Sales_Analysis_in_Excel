@@ -1,6 +1,22 @@
 # Adventure Works Sales Analysis in Excel
 *Sales Analysis Dashboard using Advance Excel*
 
+  ----
+***🔖 Project Snapshot***
+
+**Project Title:**   
+Adventure Works Sales Analysis & Dashboarding (Excel) <br>
+**Domain / Business Function:**
+Sales Analytics | Business Intelligence | Performance Reporting <br>
+**Tools & Technologies:**
+Microsoft Excel (Power Query, Pivot Tables, Data Model, Pivot Charts, Slicers, Macros) <br>
+**Analytical Focus:**
+Revenue & Profit Analysis, Time Series Trends, Product Performance, Customer Segmentation, Contribution Analysis <br>
+**Business Objective:**
+To convert raw sales data into interactive dashboards that help business users track performance, identify profit drivers, and support data-driven decision-making.
+
+ ----
+
 ## 📘 Introduction
 
 This is a sales analysis project built in Excel using the Adventure Works dataset.
@@ -320,34 +336,83 @@ The findings provide a strong foundation for data-driven decision-making and das
 
 ## 📊 Data Visualization
 
-This project includes two interactive Excel dashboards designed to analyze profit performance across time, products, customers, and demographics.
+This project includes **two interactive Excel dashboards** designed to analyze profit performance across time, products, customers, pricing, and demographics.
+Both dashboards emphasize **interactivity, usability, and business-focused insights** through filters, navigation buttons, and automated controls.
 
-### 1. Time Series Dashboard
+---
 
-Focuses on performance trends and time-based analysis.
+### 1️⃣ Time Series Dashboard
 
-* **KPI Comparison (YoY):** Comparison of COGS, Revenue, Quantity, Profit, Profit Margin, and Transactions against the previous year.
-* **Above-Average Year Performance:** Total Revenue, Profit, and Transactions for years exceeding average performance.
-* **Monthly Profit Trends:** Analysis of profit trends on a monthly basis.
-* **Profit by Week Type:** Profit comparison across different week types.
-* **Quarterly Profit Analysis:** Evaluation of profit performance by quarter.
-* **Profit by Weekday:** Analysis of profit trends across weekdays.
+**Purpose:**
+To analyze overall business performance trends and seasonality across multiple time dimensions.
 
+**Key Visual Components:**
 
-### 2. Detail Dashboard
+* **KPI Comparison (YoY):** Year-over-year comparison of COGS, Revenue, Quantity, Profit, Profit Margin, and Transactions
+* **Above-Average Year Performance:** Revenue, Profit, and Transactions for years exceeding historical averages
+* **Monthly Profit Trends:** Month-wise profit analysis to identify seasonality
+* **Profit by Week Type:** Comparison between weekday and weekend profitability
+* **Quarterly Profit Analysis:** Profit contribution and performance by quarter
+* **Profit by Weekday:** Day-wise profit distribution across the week
 
-Provides detailed insights into profitability across products, customers, demographics, pricing, and geography.
+**Interactive Filters:**
 
-* **Top 5 Profitable Products:** Percentage contribution of the top five products versus others.
-* **Top 5 Profitable Customers:** Percentage contribution of top customers compared to others.
-* **Profit by Gender:** Profit distribution by gender.
-* **Profit by Product Color:** Identification of best-selling and most profitable colors.
-* **Profit by Pricing Types:** Profit analysis across different pricing strategies.
-* **Country-wise Profit:** Geographic visualization of profit by country.
-* **Profit by Age Groups:** Profit contribution segmented by age groups.
+* **Year Filter**
+* **Month Filter**
+* **Country Filter**
 
+These filters allow users to dynamically explore trends by time period and geography.
 
-These dashboards provide clear, visual insights into revenue, customers, products, and trends.
+---
+
+### 2️⃣ Detail Dashboard
+
+**Purpose:**
+To provide a detailed, drill-down view of profitability across products, customers, demographics, pricing, and regions.
+
+**Key Visual Components:**
+
+* **Top 5 Profitable Products:** Percentage contribution of top products versus others
+* **Top 5 Profitable Customers:** Contribution analysis comparing top customers to the rest
+* **Profit by Gender:** Gender-wise profit distribution
+* **Profit by Product Color:** Identification of high-performing product colors
+* **Profit by Pricing Type:** Profit comparison across pricing segments
+* **Country-wise Profit:** Geographic comparison of profitability by country
+* **Profit by Age Groups:** Profit contribution segmented by customer age groups
+
+**Interactive Filters:**
+
+* **Year Filter**
+* **Country Filter**
+
+These filters enable focused analysis of specific markets and time periods.
+
+---
+
+### 🔘 Dashboard Controls & Navigation
+
+To enhance usability and navigation, the dashboards include interactive buttons powered by **Excel macros**:
+
+* **Page Navigation Buttons**
+
+  * Switch between **Time Series Dashboard** and **Detail Dashboard**
+* **Clear Filters Button**
+
+  * Resets all applied filters and slicers across both dashboards
+  * Enables quick return to the default dashboard view
+
+---
+
+### ✅ Outcome
+
+The combination of **interactive filters**, **navigation buttons**, and **well-structured visual layouts** allows users to:
+
+* Explore trends dynamically
+* Compare performance across multiple dimensions
+* Quickly reset and navigate dashboards for efficient analysis
+
+These dashboards are designed to support **business decision-making**, **performance monitoring**, and **data-driven storytelling**.
+
 
 ---
 
@@ -413,24 +478,24 @@ These dashboards provide clear, visual insights into revenue, customers, product
 ```
 [Adventure_Works_Sales_Analysis_in_Excel]/
 ├── Dashboard
-|   └── Adventure Works Sales Dashboard
+|   └── Adventure Works Sales Dashboard.xlsm
 ├── Database
-|   └──  AdventureWorks
+|   └──  AdventureWorks.xlsx
 ├── Images/
-│   └── analytics
-|   └── profit
-|   └── barcode (1)
-|   └── ready-stock (1)
-|   └── barcode
-|   └── ready-stock
-|   └── calendar
-|   └── sale
-|   └── D-profit
-|   └── earning
-|   └── sales
-|   └── growth
-|   └── shopping-cart
-|   └── in-stock
+│   └── analytics.gif
+|   └── profit.png
+|   └── barcode (1).gif
+|   └── ready-stock (1).png
+|   └── barcode.gif
+|   └── ready-stock.png
+|   └── calendar.gif
+|   └── sale.gif
+|   └── D-profit.png
+|   └── earning.png
+|   └── sales.png
+|   └── growth.png
+|   └── shopping-cart.gif
+|   └── in-stock.png
 └── README.md
 ```
 
